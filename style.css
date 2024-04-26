@@ -1,0 +1,213 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: white;
+  background: black;
+  margin: 0px;
+  font-family: 'Fredoka';
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+@media screen and (max-width: 600px){
+  #navbar {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #navbar img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #main-home {
+    font-size: 7vw;
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-lettere {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 56px);
+  }
+  #lettere-container {
+    width: 300px;
+    height: 300px;
+  }
+  #lettere-title {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-img {
+    font-size: 50px;
+    width: 100%;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-img img {
+    width: 128px;
+    height: 128px;
+  }
+  #random-letter {
+    display: none;
+  }
+  #lettere-button-container {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-button {
+    animation: fade-up 0.8s;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #159d47;
+    width: 50%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-button:hover {
+    box-shadow: 0 16px 20px 10px rgba(12, 90, 41, 0.2);
+  }
+}
+
+#name {
+  animation: fade-down 0.5s;
+}
+#lettere-desc {
+  animation: fade-up 0.2s;
+}
+#letter-img {
+  animation: fade-up 0.5s;
+}
+
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px){
+  #navbar {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #navbar img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #main-home {
+    font-size: 7vh;
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-lettere {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 56px);
+  }
+  #lettere-container {
+    width: 300px;
+    height: calc(64px + 192px + 48px);
+  }
+  #lettere-title {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-img {
+    font-size: 50px;
+    width: 100%;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-img img {
+    width: 128px;
+    height: 128px;
+  }
+  #random-letter {
+    display: none;
+  }
+  #lettere-button-container {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-button {
+    animation: fade-up 0.8s;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #159d47;
+    width: 50%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lettere-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 20px 10px rgba(12, 90, 41, 0.2);
+  }
+}

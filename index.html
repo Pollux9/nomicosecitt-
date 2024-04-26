@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nomi, Cose & Città</title>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="main-home">
+    <h1 id="name"><i>NOMI</i><br><span style="color:#1fdf64;font-weight:normal;">COSE &</span><br><span style="font-family:'monoton';font-weight:normal;">CITTÀ</span></h1>
+  </div>
+
+  <div id="main-lettere">
+    <div id="lettere-container">
+      <div id="lettere-title">
+        <h2 style="font-weight:normal;" id="lettere-desc">Genera lettere <span style="color:#1fdf64;">CASUALI</span></h2>
+      </div>
+      <div id="lettere-img">
+        <img src="imgs/navbar/lettere0.png" id="letter-img">
+        <h1 style="font-weight:normal;" id="random-letter">A</h1>
+      </div>
+      <div id="lettere-button-container">
+        <div id="lettere-button" onclick="RandomLetter()">
+          <h2 style="font-weight:normal;">Genera</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="navbar">
+    <img src="imgs/navbar/home1.png" id="home" onclick="Home()">
+    <img src="imgs/navbar/lettere0.png" id="lettere" onclick="Lettere()">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
